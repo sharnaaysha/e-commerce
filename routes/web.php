@@ -17,3 +17,10 @@
 */
 
 Route::get('/','HomeController@home');
+Route::get('/category','HomeController@category');
+Route::get('/contact','HomeController@contact');
+Route::get('/single','HomeController@single');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
